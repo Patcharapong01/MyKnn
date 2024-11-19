@@ -1,37 +1,21 @@
-import streamlit as st
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
-
-st.header("โปรเจ็คการจำเเนกข้อมูลดอกไม้")
-st.image("./img/patcharapong")
-
-dt=pd.read_csv('./data/iris-3.csv')
-st.subheader('ข้อมูลดิบของ iris')
-st.write(dt.head(10))
-
-st.subheader('การจำเเนกข้อมูลใหม่')
-
 from sklearn.neighbors import KNeighborsClassifier
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
+
 st.header('kairung')
 #st.image("./pic/kairung.jpg")
 col1, col2, col3 = st.columns(3)
+
 with col1:
-st.header("Versicolor")
-st.image("./img/iris1.jpg")
+    st.header("Versicolor")
+    st.image("./img/iris1.jpg")
 with col2:
-st.header("Verginiga")
-st.image("./img/iris2.jpg")
+    st.header("Verginiga")
+    st.image("./img/iris2.jpg")
 with col3:
-st.header("Setosa")
-st.image("./img/iris3.jpg")
+    st.header("Setosa")
+    st.image("./img/iris3.jpg")
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>สถิติข้อมูลดอกไม้</h5></center>
