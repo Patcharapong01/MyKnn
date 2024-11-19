@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.header('patcharapong')
-st.image("./img/patcharapong.jpg")
+st.header('Patcharapong')
+st.image("./img/patcharapong.jpg" style="wigth:100px;higth=100px;")
 col1, col2, col3 = st.columns(3)
 
 with col1:
